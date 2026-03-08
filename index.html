@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+<meta charset="utf-8">
+
+<title>每日關心花農種花了沒</title>
+
+<link rel="icon" type="image/png" sizes="32x32" href="img/img_1.png">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+<!-- ========================
+     使用說明
+======================== -->
+<div class="panel">
+
+<details>
+<summary class="panel-title">使用說明</summary>
+
+<p class="text">
+⚠️ 截圖前，請先按右上角的指北針，確認地圖朝北 ⚠️<br><br>
+
+工具不適用於沒有主幹道的地方<br><br>
+
+1. 上傳圖片<br>
+2. 調整圖片透明度、位置、大小<br>
+3. 在地圖上新增座標<br>
+4. 微調座標
+</p>
+
+</details>
+
+</div>
+
+
+<!-- ========================
+     控制面板
+======================== -->
+<div class="panel">
+
+<!-- 第一行：座標 + 上傳 -->
+<div class="row">
+
+<div class="col">
+<label>定位座標</label>
+<input id="coords" placeholder="例如：24.1477,120.6736">
+<button id="loadBtn">載入座標</button>
+</div>
+
+<div class="col">
+<label>地圖截圖</label>
+<input type="file" id="img" accept="image/*">
+</div>
+
+</div>
+
+
+<!-- 第二行：透明度 -->
+<div class="row">
+
+<div class="col">
+<label>透明度</label>
+<input type="range" id="opacitySlider" min="0" max="100" step="1" value="100">
+<input type="number" id="opacityInput" min="0" max="100" value="100">
+</div>
+
+</div>
+
+
+<!-- 第三行：XY 偏移 -->
+<div class="row">
+
+<div class="col">
+<label>左右</label>
+<input type="range" id="xSlider" value="0">
+<input type="number" id="xInput" value="0">
+</div>
+
+<div class="col">
+<label>上下</label>
+<input type="range" id="ySlider" value="0">
+<input type="number" id="yInput" value="0">
+</div>
+
+</div>
+
+
+<!-- 第四行：縮放 + 比例 -->
+<div class="row">
+
+<div class="col">
+<label>縮放</label>
+<input type="range" id="scaleSlider" min="10" max="500" step="1" value="100">
+<input type="number" id="scaleInput" min="10" max="500" value="100">
+</div>
+
+<div class="col">
+<label>比例</label>
+<input type="range" id="ratioSlider" min="50" max="200" step="1" value="100">
+<input type="number" id="ratioInput" min="50" max="200" value="100">
+</div>
+
+</div>
+
+
+<!-- 第五行：按鈕 -->
+<div class="row buttons">
+<button id="exportBtn">下載 GPX</button>
+</div>
+
+</div>
+
+
+<!-- ========================
+     地圖
+======================== -->
+<div id="map"></div>
+
+
+<!-- ========================
+     Scripts
+======================== -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
