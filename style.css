@@ -308,98 +308,62 @@ button:hover {
    Responsive / 手機版
    ========================================================= */
 
-@media (max-width:700px){
+@media (max-width: 700px) {
 
-body{
-    padding:12px;
+    body { padding: 12px; }
+
+    #map { height: 55vh; }
+
+    /* 每一列 */
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center; /* 讓輸入欄和按鈕垂直置中 */
+        gap: 8px;
+    }
+
+    /* 每個控制區 */
+    .col {
+        flex: 1 1 120px; /* 最小寬度 120px，自動撐滿 */
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    label { font-size: 12px; }
+
+    input[type=text], input[type=number] {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    input[type=range] { width: 100%; max-width: 150px; }
+
+    input[type=file] { max-width: 140px; }
+
+    /* 按鈕 */
+    button, .link-button {
+        padding: 6px 10px;
+        font-size: 13px;
+        flex: 1 1 auto; /* 自動撐滿空間 */
+    }
+
+    /* 按鈕列同行 */
+    .buttons {
+        display: flex;
+        flex-direction: row; /* 同行 */
+        gap: 6px;
+    }
+
+    /* 控制面板標題 */
+    .control-panel summary {
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-bottom: 8px;
+    }
 }
 
-/* 地圖 */
-#map{
-    height:55vh;
-}
-
-/* 控制面板標題 */
-.control-panel summary{
-    font-size:18px;
-    font-weight:bold;
-    cursor:pointer;
-    margin-bottom:10px;
-}
-
-/* panel */
-.panel{
-    gap:6px;
-}
-
-/* 每一列 */
-.row{
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    gap:8px;
-}
-
-/* 每個控制區 */
-.col{
-    flex:1;
-    min-width:130px;
-    display:flex;
-    flex-direction:column;
-    gap:3px;
-}
-
-/* label */
-label{
-    font-size:12px;
-    align-items: center;
-    justify-content: center;
-}
-
-/* 文字輸入 */
-.panel input[type=text]{
-    width:100%;
-    box-sizing:border-box;
-}
-
-/* 座標欄 */
-#coords{
-    width:100%;
-}
-
-/* 數字欄 */
-.col input[type=number]{
-    width:60px;
-    max-width:60px;
-}
-
-/* slider */
-input[type=range]{
-    width:100%;
-    max-width:150px;
-}
-
-/* file */
-input[type=file]{
-    max-width:140px;
-}
-
-/* 按鈕 */
-button{
-    padding:6px 10px;
-    font-size:13px;
-}
-
-/* 按鈕列 */
-.buttons{
-    flex-direction:column;
-}
-
-button{
-    width:100%;
-}
-
-}
 
 
 
