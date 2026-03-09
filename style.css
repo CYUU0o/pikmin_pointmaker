@@ -185,10 +185,12 @@ button:hover {
     background: #926aa6;
     color: white;
     text-decoration: none;
+    font-size: 14px;
     font-weight: bold;
-    font-family: "GenSenMaruGothic";
     transition: 0.2s;
-    text-align: center;
+    font-family: "GenSenMaruGothic";
+    align-items: center;
+    justify-content: center;
 }
 
 .link-button:hover {
@@ -398,6 +400,7 @@ button{
 }
 
 }
+
 
 
 
