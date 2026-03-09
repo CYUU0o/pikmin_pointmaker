@@ -337,6 +337,8 @@ body{
 /* label */
 label{
     font-size:12px;
+    align-items: center;
+    justify-content: center;
 }
 
 /* 文字輸入 */
@@ -382,5 +384,6 @@ button{
 }
 
 }
+
 
 
