@@ -179,18 +179,17 @@ button:hover {
 }
 
 .link-button {
-    display: inline-block;
     padding: 8px 14px;
     border-radius: 8px;
-    background: #926aa6;
-    color: white;
-    text-decoration: none;
+    border: none;
+    cursor: pointer;
     font-size: 14px;
     font-weight: bold;
     transition: 0.2s;
     font-family: "GenSenMaruGothic";
     align-items: center;
     justify-content: center;
+    background: #ffa726;
 }
 
 .link-button:hover {
@@ -363,6 +362,7 @@ button:hover {
         margin-bottom: 8px;
     }
 }
+
 
 
 
