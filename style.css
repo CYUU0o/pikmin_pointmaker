@@ -303,39 +303,56 @@ button:hover {
         height: 55vh;
     }
 
-    .panel {
-        flex-direction: column;
-        gap: 8px;
+    .control-panel summary{
+        font-size:18px;
+        font-weight:bold;
+        cursor:pointer;
+        margin-bottom:10px;
     }
-   
+
+    .panel {
+        gap:6px;
+    }
+
+    /* 每一列保持橫排 */
+    .row{
+        flex-direction:row;
+        flex-wrap:wrap;
+        align-items:flex-start;
+        gap:8px;
+    }
+
+    /* 每個區塊平均寬度 */
+    .col{
+        flex:1;
+        min-width:140px;
+        display:flex;
+        flex-direction:column;
+        gap:4px;
+    }
+
     .panel input{
-        width:100%;
+        font-size:12px;
+        padding:5px 6px;
     }
 
     input[type=range]{
         width:100%;
     }
 
+    .col input[type=number]{
+        width:70px;
+    }
+
     .buttons {
-        flex-direction: column;
+        flex-direction:column;
     }
 
     button {
-        width: 100%;
-    }
-    .row{
-        flex-direction:column;
-        align-items:stretch;
-    }
-
-    .col{
-        display:flex;
-        flex-direction:column;
-        gap:4px;
-    }
-
-        .col input[type=number]{
-        width:80px;
+        width:100%;
+        padding:7px 10px;
+        font-size:13px;
     }
 
 }
+
