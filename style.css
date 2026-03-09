@@ -161,25 +161,38 @@ input[type=range] {
 
 button {
     padding: 8px 14px;
-
     border-radius: 8px;
     border: none;
-
     cursor: pointer;
-
     font-size: 14px;
     font-weight: bold;
-
     transition: 0.2s;
-
     font-family: "GenSenMaruGothic";
-
     align-items: center;
     justify-content: center;
 }
 
 /* Hover */
 button:hover {
+    transform: translateY(-1px);
+    opacity: 0.9;
+}
+
+.link-button {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 8px;
+    background: #926aa6;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "GenSenMaruGothic";
+    transition: 0.2s;
+    text-align: center;
+}
+
+.link-button:hover {
+    background: #745285;
     transform: translateY(-1px);
     opacity: 0.9;
 }
@@ -385,6 +398,7 @@ button{
 }
 
 }
+
 
 
 
