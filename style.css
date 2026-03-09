@@ -356,15 +356,20 @@ button:hover {
 
 }
 
-/* 桌機 */
+/* 電腦版：強制展開 */
 @media (min-width:701px){
-
-    .control-panel summary{
-        display:none;
-    }
 
     .control-panel{
         display:block;
     }
 
+    .control-panel summary{
+        display:none;
+    }
+
+    .control-panel[open]{
+        display:block;
+    }
+
 }
+
