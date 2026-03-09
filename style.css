@@ -356,3 +356,15 @@ button:hover {
 
 }
 
+/* 桌機 */
+@media (min-width:701px){
+
+    .control-panel summary{
+        display:none;
+    }
+
+    .control-panel{
+        display:block;
+    }
+
+}
