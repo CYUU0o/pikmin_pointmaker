@@ -475,7 +475,7 @@ xmlns="http://www.topografix.com/GPX/1/1">
     const a = document.createElement("a");
 
     a.href = url;
-    a.download = "route.gpx";
+    a.download = "pikmin_gpx.gpx";
 
     a.click();
 }
@@ -510,4 +510,5 @@ function loadCoordinates() {
         overlayCenter = { lat, lng };
         updateOverlayTransform();
     }
+
 }
